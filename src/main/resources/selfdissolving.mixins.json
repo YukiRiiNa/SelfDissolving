@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "ltd.teaparty.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PollutantRandomTickMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

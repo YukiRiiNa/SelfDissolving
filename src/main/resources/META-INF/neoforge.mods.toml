@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="MIT"
+
+[[mods]]
+modId="selfdissolving"
+version="1.0.0"
+displayName="Self Dissolving Addon"
+authors="YourName"
+description='''
+让污染物自动消散的附属模组。
+'''
+
+# 这里千万不要写成 [[dependencies.${mod_id}]]
+[[dependencies.selfdissolving]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.selfdissolving]]
+modId="adpother"
+type="required"
+versionRange="[1.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[mixins]]
+config="selfdissolving.mixins.json"
