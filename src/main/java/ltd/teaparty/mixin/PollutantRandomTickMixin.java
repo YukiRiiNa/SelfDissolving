@@ -48,7 +48,6 @@ public abstract class PollutantRandomTickMixin {
                 // 获取当前坐标的方块状态
                 BlockState state = level.getBlockState(pos);
 
-                // 【核心替代方案】：
                 // 先安全检查这个方块是否有 LEVEL 属性，如果有，再判断它的值是不是 0 (即水源)
                 if (state.hasProperty(BlockStateProperties.LEVEL) && state.getValue(BlockStateProperties.LEVEL) == 0) {
 
