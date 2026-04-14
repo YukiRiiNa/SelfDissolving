@@ -35,7 +35,6 @@ public abstract class PollutantRandomTickMixin {
 
         if (blockId.startsWith("adpother:")) {
             float decayChance = 0.05f;
-
             // 1. 处理气体或粉尘
             if (blockId.contains("carbon") || blockId.contains("sulfur") || blockId.contains("dust")) {
                 if (random.nextFloat() < decayChance) {
